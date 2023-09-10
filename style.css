@@ -20,6 +20,7 @@ body {
     transform: perspective(1000px);
     box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.2);
     transition: 1s ease-in-out;
+     border: 5px solid red;
 }
 .card .imgBox {
     position: relative;
@@ -33,7 +34,7 @@ body {
 
 }
 .card:hover {
-    transform: translateX(50%);
+    transform: translateX(60%);
 }
 .card:hover .imgBox {
     transform: rotateY(-180deg);
@@ -47,6 +48,7 @@ body {
     object-fit: cover;
     transform-style: preserve-3d;
     backface-visibility: hidden;
+    display: flex;
 }
 
 .card .imgBox img:nth-child(2) {
@@ -62,3 +64,4 @@ body {
     transform-style: preserve-3d;
     backface-visibility: hidden;
 }
+
